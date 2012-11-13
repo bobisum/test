@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for product in products %}
+	<h1>{{ product.title }}</h1>
+	{{ product.content }}
+	{{ product.price }}
+	<img src="{{ MEDIA_URL }}{{ product.image }}" alt="image" />
+	{{ product.do_we_have_it }}
+	{{ product.category }}
+{% endfor %}
+
+{% endblock content %}

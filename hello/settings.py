@@ -114,7 +114,9 @@ INSTALLED_APPS = (
     'products',
     'category',
     'django.contrib.admin',
-    'south'
+    'south',
+    'users',
+    'inbox',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

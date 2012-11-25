@@ -117,6 +117,7 @@ INSTALLED_APPS = (
     'south',
     'users',
     'inbox',
+    'testowapp',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

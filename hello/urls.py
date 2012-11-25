@@ -6,10 +6,14 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
 	url(r'^bobisum$', 'pages.views.homepage', name='home'),
 	url(r'^contacts$', 'pages.views.contacts', name='contacts'),
 	url(r'^products$', 'products.views.products', name='products'),
+	url(r'^register$', 'users.views.register_user', name='register'),
+	url(r'^login$', 'users.views.login_user', name='login'),
+	url(r'^testow$', 'testowapp.views.avtomobili', name='testow'),
+	# url(r'^products$', 'products.views.products', name='products'),
+	# url(r'^products$', 'products.views.products', name='products'),
     # url(r'^hello/', include('hello.foo.urls')),
 
 	url(r'^media/(?P<path>.*)$', 'django.views.static.serve',
